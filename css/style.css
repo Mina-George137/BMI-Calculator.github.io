@@ -1,0 +1,12 @@
+body {
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+}
+
+#guide p {
+    font-size: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class=" bg-light">
+    <section id="formBMI" class="py-5 bg-light">
+        <h1 class="text-center text-decoration-underline title">BMI Calculator</h1>
+        <div class="container">
+            <div class="from-group mb-3">
+                <label for="height" class=" h5">Height in (cm)</label>
+                <input type="number" id="height" class=" form-control">
+            </div>
+
+            <div class="from-group mb-3">
+                <label for="weight" class=" h5">Weight in (Kg)</label>
+                <input type="number" id="weight" class=" form-control">
+            </div>
+
+            <button type="submit" id="mainBtn" class=" btn btn-outline-primary btn-lg">Calculate</button>
+        </div>
+
+        <div id="results">
+            <h3 class=" text-center">Your result is:</h3>
+            <h4 id="result" class=" text-center"></h4>
+        </div>
+    </section>
+
+    <section id="guide" class=" py-2 bg-light">
+        <p class=" text-center m-1 text-secondary">Underweight = smaller than 18.5</p>
+        <p class=" text-center m-1 text-success"> Normal weight = 18.5–24.9 </p>
+        <p class=" text-center m-1 text-warning">Overweight = 25–29.9</p>
+        <p class=" text-center m-1 text-danger">Obesity = BMI of 30 or greater</p>
+    </section>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
